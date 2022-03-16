@@ -98,13 +98,13 @@ while True:
    if (event.type == pygame.KEYDOWN):
 #key pressed handlers
     if(event.key == pygame.K_DOWN):
-     playerYVel += 0.5
+     playerYVel = 0.5
     elif(event.key == pygame.K_UP):
-     playerYVel -= 0.5
+     playerYVel = -0.5
     if(event.key == pygame.K_RIGHT):
-     playerXVel += 0.5
+     playerXVel = 0.5
     elif(event.key == pygame.K_LEFT):
-     playerXVel -= 0.5
+     playerXVel = -0.5
 #key released handlers
    elif event.type == pygame.KEYUP:
     if(event.key == pygame.K_DOWN or event.key == pygame.K_UP):
